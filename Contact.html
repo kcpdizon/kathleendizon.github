@@ -33,8 +33,27 @@
                 </nav>
             </div>
         <div class="about-container">
-            <h1>Contact Me</h1><br>
-            <img src="photos/location-icon.png"><p>Taipei, Taiwan</p>
+            <div class="row">
+                <div class="contact-left">
+                    <h1 id="contact">Contact Me</h1>
+                        <div class="contact-details">
+                            <img src="photos/location-icon.png" id="location-icon">
+                            <p id="location">Taipei, Taiwan</p>
+                        </div>
+                        <div class="contact-details">
+                            <img src="Photos/email-icon.png" id="email-icon">
+                            <p id="email">kcpdizon9@gmail.com</p>
+                        </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <textarea name="Message" placeholder="Message" rows="6"></textarea>
+                        <button type="submit" id="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
         </div> 
     </body>
 </html>

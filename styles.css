@@ -236,4 +236,77 @@ nav ul li a:hover::after {
     font-family: 'Be Vietnam Pro';
 }
 
+#location-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
 
+#email-icon{
+    width: 24px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: row; /* row meaning horizontal */
+    align-items: center;
+    margin-bottom: 0;
+}
+
+#contact{
+    font-size: 35px;
+}
+#location, #email {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.contact-left {
+    flex-basis: 30%;
+    padding-left: 250px;
+    align-items: flex-end;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-right form{
+    width: 65%;
+}
+
+form input, form textarea{
+    width: 80%;
+    border: 0;
+    outline: black;
+    padding: 14px;
+    margin: 15px 0;
+    color:#000000;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 1.5px solid #000; 
+    flex-direction: column;
+    gap: 10px;
+}
+
+#btn{
+    display: block;
+    margin-top: 20px;
+    margin-left: 0;
+    width: fit-content;
+    border: 1.5px solid #000000;
+    padding: 14px 50px;
+    border-radius: 6px;
+    color: #000;
+    transition: background 0.5s;
+    background-color: #000;
+    color: #ffffff;
+}
+
+#btn:hover{
+    background: #ffffff;
+    cursor: pointer;
+    color: #000000;
+}
