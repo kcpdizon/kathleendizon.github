@@ -1,0 +1,312 @@
+
+#header  {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    color: #CFCFCF;
+    font-family: 'Space Grotesk';
+    font: size 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+    background-image: url(photos/bg.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+body {
+    margin: 0px;
+}
+
+#logo {
+    width: 250px;
+    height: auto;
+    margin-left: 89px;
+    margin-top: 49px;
+}
+
+#photography {
+    width: 600px;
+    height: auto;
+    margin-left: 175px;
+    margin-top: 270px;
+}
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+nav ul li {
+    display: inline;
+    list-style: none;
+    margin: 10px 23px;
+}
+
+nav ul li a{
+    margin-right: 50px;
+    color: #CFCFCF;
+    text-decoration: none;
+    position: relative;
+    font-size: 18px;    
+}
+
+nav ul li a::after{
+    content: '';   
+    width: 0;
+    height: 3px;
+    background: #CFCFCF;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* --------------------- about ----------------------- */
+
+#about-header {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Space Grotesk';
+    font: size 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+    background-image: url(Photos/chair-header.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#picture {
+    width: 423px;
+    height: auto;
+    margin-top: 100px;
+    margin-left: 90px;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+    margin-top: 200px;
+    line-height: 1.6;
+}
+
+.subtitle {
+    font-size: 35px;
+}
+
+#description {
+    font-family: 'Be Vietnam Pro';
+    font-weight: 200;
+    font-size: 17px;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px; /* top, left and right, bottom */
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents {
+    display: flex;
+    margin-left: -40px;
+    margin-top: -30px;
+    width: 80%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    font-family: 'Be Vietnam Pro';
+    font-weight: 400;
+}
+
+.tab-contents ul li span{
+    color: #717171;
+    font-size: 14px;
+}
+
+#exp-desc {
+    font-size: 13px;
+    color: #717171;
+}
+
+.tab-contents{
+    display:none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+} 
+
+/* ------------------------------- work --------------------------------------- */
+#work-header {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Space Grotesk';
+    font: size 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+    background-image: url(Photos/chair-header.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-container{
+    margin-top: 220px;
+    width: 1550px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    columns: 4;
+}
+
+.gallery-container .box{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.gallery-container .box img{
+    max-width: 100%;
+}
+
+@media (max-width: 1200px) 
+{
+    .gallery-container
+    {
+        width: calc(100% - 40px);
+        columns: 3;
+    }
+}
+
+@media (max-width: 760px)
+{
+    .container
+    {
+        width: calc(100% - 40px);
+        columns: 3;
+    }
+} 
+/* --------------------------------------- contact me -------------------------------------------- */
+.about-container {
+    margin-top: 220px;
+    margin-left: 150px;
+    font-family: 'Be Vietnam Pro';
+}
+
+#location-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+#email-icon{
+    width: 24px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: row; /* row meaning horizontal */
+    align-items: center;
+    margin-bottom: 0;
+}
+
+#contact{
+    font-size: 35px;
+}
+#location, #email {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.contact-left {
+    flex-basis: 30%;
+    padding-left: 250px;
+    align-items: flex-end;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-right form{
+    width: 65%;
+}
+
+form input, form textarea{
+    width: 80%;
+    border: 0;
+    outline: black;
+    padding: 14px;
+    margin: 15px 0;
+    color:#000000;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 1.5px solid #000; 
+    flex-direction: column;
+    gap: 10px;
+}
+
+#btn{
+    display: block;
+    margin-top: 20px;
+    margin-left: 0;
+    width: fit-content;
+    border: 1.5px solid #000000;
+    padding: 14px 50px;
+    border-radius: 6px;
+    color: #000;
+    transition: background 0.5s;
+    background-color: #000;
+    color: #ffffff;
+}
+
+#btn:hover{
+    background: #ffffff;
+    cursor: pointer;
+    color: #000000;
+}
